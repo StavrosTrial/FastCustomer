@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    position: relative;
+    width: 80vw;
+    height: 100vh;
+    background: url('./images/register.jpg') no-repeat center center/contain; /* Background image */
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+    display: none;
+}
+
+#startMessage {
+    display: block;
+}
+
+.scoreboard {
+    position: absolute;
+    top: 40px;
+    left: 1040px;
+    font-size: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#player {
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 90px); /* Center the player initially */
+    width: 143px;
+    height: auto;
+}
+
+.falling-image {
+    position: absolute;
+    width: 65px; /* Adjust size as needed */
+    height: 65px; /* Adjust size as needed */
+    top: 20%; /* Start position */
+    left: calc(50% - 25px); /* Center the falling image */
+    transition: top 1s linear; /* Adjust speed as needed */
+}
